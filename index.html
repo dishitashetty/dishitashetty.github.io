@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dishita Shetty</title>
+    <!-- Connect to separate file for styling -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Connect to Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/2cf7d8d0b3.js" crossorigin="anonymous"></script>
+    <!-- Import Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
-<body>
+<body> 
     <nav class="navbar">
         <div class="navbar_container">
-            <a 
-                href="/index.html" 
-                id="navbar_logo">Home
-            </a>
+            <a href="/index.html" id="navbar_logo"><i class="fa-solid fa-house fa-large"></i></a>
+            <!-- The above line adds a Font Awesome icon as the logo -->
             <div class="navbar_toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
-                <span class="bar"></sxpan>
+                <span class="bar"></span>
             </div>
+            <!-- The above lines create the mobile menu toggle button -->
             <ul class="navbar_menu">
                 <li class="navbar_item">
                     <a href="/aboutme.html" class="navbar_links">About Me</a>
@@ -32,28 +38,49 @@
                 <li class="navbar_item">
                     <a href="/projects.html" class="navbar_links">Projects</a>
                 </li>
-                <li class="navbar_button">
-                    <a href="/contactme.html" class="button">Contact Me</a>
-                </li>
             </ul>
         </div>
     </nav>
+
     <!--Intro Section-->
     <div class="main">
         <div class="main_container">
             <div class="main_content">
-                <h1>WELCOME</h1>
-                <h2>TO MY WEBSITE</h2>
-                <p>Come learn a little about me!</p>
+                <p>Hello, I'm</p>
+                <h1>DISHITA SHETTY</h1>
+                <p>Welcome to my website :)</p>
                 <button class="main_button">
-                    <a href="/aboutme.html">About Me</a>
+                    <a href="/aboutme.html">About Me </a>
                 </button>
             </div>
+            <!-- The above lines create the introductory content -->
             <div class="main_image_container">
-                <img src="images/intro.png" alt="Dishita Shetty" class="intro_image" />
+                <img src="/images/intro.png" alt="Dishita Shetty" class="intro_image" />
             </div>
         </div>
     </div>
-    <script src = "app.js"></script> 
+
+    <!--Footer Section-->
+    <footer class="footer">
+        <div class="footer_container">
+            <ul class="footer_menu">
+                <li class="footer_item">
+                    <a href="mailto:dishitashetty@gmail.com" class="footer_links"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                </li>
+                <!-- The above line adds a Font Awesome icon for email -->
+                <li class="footer_item">
+                    <a href="https://www.linkedin.com/in/dishitashetty/" class="footer_links"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                </li>
+                <!-- The above line adds a Font Awesome icon for LinkedIn -->
+                <li class="footer_item">
+                    <a href="https://github.com/dishitashetty" class="footer_links"><i class="fa-brands fa-github fa-2xl"></i></a>
+                </li>
+                <!-- The above line adds a Font Awesome icon for GitHub -->
+            </ul>
+        </div>
+    </footer>
+
+    <script src="app.js"></script> 
+    <!-- The above line links the JavaScript file -->
 </body>
 </html>
